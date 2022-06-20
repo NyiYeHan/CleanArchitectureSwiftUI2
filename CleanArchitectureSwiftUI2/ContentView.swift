@@ -1,16 +1,15 @@
 //
 //  ContentView.swift
-//  CleanArchitectureSwiftUI2
+//  CleanArchitecture
 //
-//  Created by Nyi Ye Han on 20/06/2022.
+//  Created by Nyi Ye Han on 16/06/2022.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+      NewsListView()
     }
 }
 
