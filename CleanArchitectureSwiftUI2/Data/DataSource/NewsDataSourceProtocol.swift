@@ -6,6 +6,7 @@
 //
 
 import Foundation
+// feed
 protocol NewsDataSourceProtocol{
     func getNews(parameters : [String : String])async throws -> [News]
 }

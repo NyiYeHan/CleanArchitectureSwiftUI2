@@ -14,7 +14,7 @@ class NewsListViewModel :ObservableObject {
     @Published var news : [News] = []
     
    
-    @Injected var newsListUseCase : GetAllNewsUseCase
+    @Injected var newsListUseCase : GetAllNewsUseCaseProtocol
     
     @MainActor
     func getNews() async{

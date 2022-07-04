@@ -12,6 +12,8 @@ enum AppError: Error, Equatable {
     case parsing(description: String)
     case network(description: String)
     
+    
+    
 
     var description: String {
         switch self {

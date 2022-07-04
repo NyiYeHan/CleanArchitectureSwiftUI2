@@ -13,10 +13,13 @@ extension Resolver : ResolverRegistering{
         
         defaultScope = .application
         
-        register{URLComponentsService() }
+        register{URLComponentsService()}
+        register{URLSessionService()}
+        register{AlamofireService()}
         register{NewsDataSourceImpl()}.implements(NewsDataSourceProtocol.self)
         register{NewsRepositoryImpl()}.implements(NewsRepositoryProtocol.self)
-        register{GetAllNewsUseCase()}
+        register{GetAllNewsUseCase()}.implements(GetAllNewsUseCaseProtocol.self)
+        
         
     }
 }

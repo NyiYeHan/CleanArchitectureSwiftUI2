@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import Alamofire
 
 // MARK: - URLComponentsService
 struct URLComponentsService {
+    
     func makeComponent(queryParameters :[String : String]? = nil,path : String? = nil) -> URLComponents {
         var components = URLComponents()
         components.host = EndPoint.BASE_URL
